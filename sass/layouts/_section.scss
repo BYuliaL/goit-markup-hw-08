@@ -1,0 +1,35 @@
+.section {
+  color: $title-text-color;
+}
+
+.information,
+.team,
+.our-client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.example {
+  padding-bottom: 94px;
+}
+
+.conteiner__title {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.product,
+.staff {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}

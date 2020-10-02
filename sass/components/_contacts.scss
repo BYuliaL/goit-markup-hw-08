@@ -1,0 +1,46 @@
+.contacts {
+  display: flex;
+  align-items: center;
+
+  &:hover .contacts__email,
+  &:focus .contacts__email,
+  &:hover .contacts__tel,
+  &:focus .contacts__tel {
+    color: $accent-color;
+  }
+
+  &:hover .contacts__email-icon,
+  &:hover .contacts__tel-icon {
+    fill: $accent-color;
+  }
+
+  .contacts__email-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: $primary-text-color;
+  }
+
+  .contacts__tel-icon {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: $primary-text-color;
+  }
+  .contacts__email {
+    margin-right: 30px;
+  }
+
+  .contacts__email,
+  .contacts__tel {
+    color: $primary-text-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

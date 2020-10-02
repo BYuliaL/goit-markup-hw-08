@@ -1,0 +1,57 @@
+.footer-form {
+  margin-left: 90px;
+}
+
+.footer-form__field-label {
+  display: flex;
+}
+
+.footer-form__field-label input {
+  font-family: Roboto;
+  font-style: normal;
+  background-color: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  height: 50px;
+  width: 350px;
+}
+
+.box-email input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-submit {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding-left: 29px;
+}
+
+.footer-submit__icon {
+  fill: $button-color;
+  height: 24px;
+  width: 24px;
+  margin-left: 10px;
+}
+
+.box-email {
+  margin-right: 12px;
+}
+
+.box-email input {
+  padding-left: 16px;
+}
