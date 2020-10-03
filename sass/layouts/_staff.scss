@@ -1,44 +1,63 @@
 .team {
   background: #f5f4fa;
+}
 
-  .staff {
+.staff {
+  margin: -15px;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 30px;
+  }
+
+  @include for-size(tablet) {
     display: flex;
     flex-wrap: wrap;
-    .staff__box {
-      width: 270px;
-      background: #ffffff;
-    }
-
-    .staff__list {
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
-
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
-
-    .staff__name {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.19;
-      text-align: center;
-      letter-spacing: 0.03em;
-      margin: 0;
-      padding-top: 30px;
-    }
-
-    .staff__position {
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 19px;
-      text-align: center;
-      letter-spacing: 0.03em;
-      padding-bottom: 16px;
-      padding-top: 10px;
-      margin: 0;
-      color: $primary-text-color;
-    }
   }
+
+  @include for-size(desktop) {
+    margin-top: 50px;
+  }
+
+  .staff__box {
+    width: 100%;
+    background: #ffffff;
+  }
+}
+
+.staff__list {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  @include for-size(tablet) {
+    width: calc((100% - 30px * 2) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 4) / 4);
+    margin: 15px;
+  }
+}
+
+.staff__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.staff__position {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-bottom: 16px;
+  padding-top: 10px;
+  margin: 0;
+  color: $primary-text-color;
 }

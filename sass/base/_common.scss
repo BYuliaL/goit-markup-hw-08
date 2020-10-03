@@ -1,3 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  outline: 2px solid red;
+}
+
 body {
   font-family: Roboto, sans-serif;
 }
@@ -28,15 +39,27 @@ textarea {
 }
 
 .conteiner {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+
+  @include for-size(mobile) {
+    width: 480px;
+  }
+
+  @include for-size(tablet) {
+    width: 768px;
+  }
+
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
 
 .flexbox {
-  display: flex;
+  //display: flex;
   align-items: center;
 }
 

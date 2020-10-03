@@ -1,16 +1,27 @@
 .footer-form {
-  margin-left: 90px;
+  //margin-left: 90px;
 }
 
 .footer-form__field-label {
-  display: flex;
+  //display: flex;
+}
+
+.footer-title {
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $button-color;
 }
 
 .footer-form__field-label input {
   font-family: Roboto;
   font-style: normal;
   background-color: transparent;
-
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -41,7 +52,7 @@
   padding-left: 29px;
 }
 
-.footer-submit__icon {
+.button-submit__icon {
   fill: $button-color;
   height: 24px;
   width: 24px;
@@ -49,7 +60,7 @@
 }
 
 .box-email {
-  margin-right: 12px;
+  //margin-right: 12px;
 }
 
 .box-email input {

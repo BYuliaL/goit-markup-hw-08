@@ -3,38 +3,17 @@ footer {
 }
 
 .footer {
-  display: flex;
+  //display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
-
-  &-title {
-    margin: 0;
-    padding-top: 12px;
-    padding-bottom: 20px;
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $button-color;
-  }
 }
 
-.join {
-  padding: 0;
-
-  .footer-link {
-    background: rgba(255, 255, 255, 0.1);
-  }
-
-  .footer-icon {
-    fill: $button-color;
-  }
+.footer-box {
+  text-align: center;
 }
 
 .box-adress {
-  margin-right: 70px;
+  //margin-right: 70px;
 
   .logotype__part {
     color: $button-color;
@@ -52,7 +31,24 @@ footer {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     text-decoration: none;
+  }
+}
+
+.footer-social {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.join {
+  padding: 0;
+
+  .footer-link {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .footer-icon {
+    fill: $button-color;
   }
 }

@@ -1,58 +1,87 @@
 .about-work {
   padding-left: 0;
 
-  .about-work__list {
-    width: 270px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
 
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-    &::before {
-      display: block;
-      content: "";
-      height: 120px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: #f5f4fa;
-      margin-bottom: 30px;
-    }
+.about-work__list::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.about-work__list {
+  @include for-size(mobile) {
+    margin-bottom: 30px;
   }
 
-  .about-work__title {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    margin: 0;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px * 2) / 2);
+    margin: 15px;
   }
-  .about-work__inf {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    margin-top: 10px;
-    margin-bottom: 0;
-    color: $primary-text-color;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px * 2) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 4) / 4);
+    margin: 15px;
+  }
+}
+
+.about-work__title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0;
+
+  @include for-size(tablet) {
+    text-align: left;
+  }
+}
+
+.about-work__inf {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: $primary-text-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    height: 75px;
   }
 }
 
 .icon-antenna::before {
   background-image: url("../icons/antenna.png");
-  background-size: 70px;
+  //background-size: 70px;
 }
 
 .icon-clock::before {
   background-image: url("../icons/clock.png");
-  background-size: 70px;
+  //background-size: 70px;
 }
 
 .icon-diagram::before {
   background-image: url("../icons/diagram.png");
-  background-size: 70px;
+  //background-size: 70px;
 }
 
 .icon-astronaut::before {
   background-image: url("../icons/astronaut.png");
-  background-size: 70px;
+  //background-size: 70px;
 }

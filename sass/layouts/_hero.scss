@@ -1,5 +1,5 @@
 .hero {
-  display: flex;
+  //display: flex;
   align-items: center;
   text-align: center;
   height: 600px;
@@ -16,16 +16,29 @@
   background-position: center;
   background-size: cover;
 
+  .hero-conteiner {
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    @include for-size(desktop) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+  }
+
   &-text {
     color: $button-color;
-    font-style: normal;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
     margin: 0;
+
+    @include for-size(desktop) {
+      font-size: 44px;
+    }
   }
 
   &-button {
