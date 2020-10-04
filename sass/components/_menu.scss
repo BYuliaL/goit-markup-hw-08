@@ -11,16 +11,23 @@
 
 .navigation-wrap {
   display: none;
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 
 .navigation {
-  //display: flex;
-  //align-items: center;
   margin-right: auto;
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .menu {
-  //display: flex;
+  @include for-size(desktop) {
+    display: flex;
+  }
 
   .menu__item:not(:last-child) {
     margin-right: 50px;

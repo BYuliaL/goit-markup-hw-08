@@ -6,10 +6,34 @@ footer {
   //display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include for-size(desktop) {
+    display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 60px;
+  }
+}
+
+.box-tablet {
+  @include for-size(tablet) {
+    display: flex;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+
+  @include for-size(desktop) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .footer-box {
   text-align: center;
+
+  @include for-size(desktop) {
+    text-align: left;
+  }
 }
 
 .box-adress {
@@ -39,6 +63,17 @@ footer {
 .footer-social {
   margin-top: 60px;
   margin-bottom: 60px;
+
+  @include for-size(tablet) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 170px;
+  }
+
+  @include for-size(desktop) {
+    margin-left: 70px;
+    margin-right: 90px;
+  }
 }
 
 .join {

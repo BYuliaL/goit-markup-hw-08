@@ -59,8 +59,11 @@ textarea {
 }
 
 .flexbox {
-  //display: flex;
   align-items: center;
+
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 
 .gallery > img {
