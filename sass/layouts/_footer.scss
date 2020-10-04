@@ -1,18 +1,7 @@
-footer {
-  background-color: #2f303a;
-}
-
 .footer {
-  //display: flex;
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-
-  @include for-size(desktop) {
-    display: flex;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-bottom: 60px;
-  }
 }
 
 .box-tablet {
@@ -36,9 +25,7 @@ footer {
   }
 }
 
-.box-adress {
-  //margin-right: 70px;
-
+.footer {
   .logotype__part {
     color: $button-color;
   }
@@ -53,37 +40,16 @@ footer {
   .footer-tel {
     color: $accent-white-color;
     font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 1.7;
     text-decoration: none;
   }
 }
 
-.footer-social {
-  margin-top: 60px;
-  margin-bottom: 60px;
-
-  @include for-size(tablet) {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 170px;
-  }
-
-  @include for-size(desktop) {
-    margin-left: 70px;
-    margin-right: 90px;
-  }
+.footer-link {
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.join {
-  padding: 0;
-
-  .footer-link {
-    background: rgba(255, 255, 255, 0.1);
-  }
-
-  .footer-icon {
-    fill: $button-color;
-  }
+.footer-icon {
+  fill: $button-color;
 }

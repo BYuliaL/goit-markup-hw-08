@@ -16,7 +16,7 @@
   color: $button-color;
 }
 
-.footer-form__field-label input {
+.footer-form__input {
   font-family: Roboto;
   font-style: normal;
   background-color: transparent;
@@ -25,7 +25,8 @@
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
   height: 50px;
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
 }
 
 .box-email input::placeholder {
@@ -47,13 +48,8 @@
   letter-spacing: 0.06em;
   padding-left: 29px;
   margin-top: 20px;
-  margin-left: 125px;
-  margin-right: 125px;
-
-  @include for-size(tablet) {
-    margin-left: 270px;
-    margin-right: 270px;
-  }
+  margin-left: auto;
+  margin-right: auto;
 
   @include for-size(desktop) {
     margin-left: 15px;
