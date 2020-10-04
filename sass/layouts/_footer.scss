@@ -4,24 +4,59 @@
   padding-bottom: 60px;
 }
 
-.box-tablet {
-  @include for-size(tablet) {
+.footer-title {
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $button-color;
+}
+
+.footer-container {
+  @media screen and (min-width: 768px) {
     display: flex;
-    padding-right: 80px;
-    padding-left: 80px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
-  @include for-size(desktop) {
-    padding-right: 0;
-    padding-left: 0;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    //align-items: baseline;
   }
 }
 
 .footer-box {
-  text-align: center;
+  width: 100%;
 
-  @include for-size(desktop) {
-    text-align: left;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+.footer-box:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.footer-box:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    width: calc((50% - 45px) / 2);
+    margin-bottom: 0;
+  }
+}
+
+.footer-box:last-child {
+  @media screen and (min-width: 1200px) {
+    width: calc(50% - 15px);
   }
 }
 

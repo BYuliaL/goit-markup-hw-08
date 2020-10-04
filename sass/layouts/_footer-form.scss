@@ -1,19 +1,7 @@
 .footer-form__field-label {
-  @include for-size(desktop) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
-}
-
-.footer-title {
-  margin: 0;
-  padding-bottom: 20px;
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $button-color;
 }
 
 .footer-form__input {
@@ -24,12 +12,15 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: rgba(255, 255, 255, 0.6);
+  padding: 15px 15px 15px 16px;
   height: 50px;
   width: 100%;
-  max-width: 360px;
+  max-width: 450px;
 }
 
 .box-email input::placeholder {
+  font-family: Roboto;
+  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -44,9 +35,10 @@
 .button-submit {
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
-  padding-left: 29px;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -63,10 +55,6 @@
   height: 24px;
   width: 24px;
   margin-left: 10px;
-}
-
-.box-email {
-  //margin-right: 12px;
 }
 
 .box-email input {

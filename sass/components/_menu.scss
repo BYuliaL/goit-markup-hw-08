@@ -3,21 +3,31 @@
   padding-top: 16px;
   padding-bottom: 16px;
 
-  @include for-size(tablet) {
-    padding-top: 25px;
-    padding-bottom: 25px;
+  .flexbox {
+    @include for-size(tablet) {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
   }
 }
 
 .navigation-wrap {
   display: none;
-  @include for-size(desktop) {
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1120px) {
     display: flex;
   }
 }
 
 .navigation {
   margin-right: auto;
+
   @include for-size(desktop) {
     display: flex;
     align-items: center;
