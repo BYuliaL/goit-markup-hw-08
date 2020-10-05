@@ -61,10 +61,6 @@
 }
 
 .footer {
-  .logotype__part {
-    color: $button-color;
-  }
-
   .adress {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -85,6 +81,9 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-icon {
-  fill: $button-color;
+.social-icons {
+  padding-bottom: 0;
+  .footer-icon {
+    fill: $button-color;
+  }
 }

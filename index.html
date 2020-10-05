@@ -13,40 +13,43 @@
   <body>
     <!--ГЛАВНОЕ МЕНЮ-->
     <header class="header">
-      <div class="conteiner flexbox">
-        <a href="" class="logotype"
-          >Web<span class="logotype__part">Studio</span>
+      <div class="container header__main">
+        <a href="" class="logo logotype"
+          >Web<span class="logo-top">Studio</span>
         </a>
-        <div class="navigation-wrap">
-          <nav class="navigation">
-            <ul class="list menu">
-              <li class="menu__item">
-                <a href="" class="menu__link current">Студия</a>
-              </li>
-              <li class="menu__item">
-                <a href="portfolio.html" class="menu__link">Портфолио</a>
-              </li>
-              <li class="menu__item">
-                <a href="" class="menu__link">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="contacts contacts-email">
-            <svg class="contacts__email-icon">
-              <use href="./icons/sprite.svg#icon-icon-email"></use>
-            </svg>
-            <a class="contacts__email contact" href="mailto:info@devstudio.com">
-              info@devstudio.com
-            </a>
-          </div>
-          <div class="contacts contacts-tel">
-            <svg class="contacts__tel-icon">
-              <use href="./icons/sprite.svg#icon-icon-tel"></use>
-            </svg>
-            <a class="contacts__tel contact" href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
-          </div>
+        <div class="main-container">
+          <ul class="site-nav contacts">
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link site-nav__link--current"
+                >Студия</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link">Контакты</a>
+            </li>
+          </ul>
+
+          <ul class="site-contacts contacts">
+            <li class="site-contacts__item">
+              <a href="mailto:info@devstudio.com" class="site-contacts__link"
+                ><svg class="site-contacts__icon mail" width="16" height="12">
+                  <use href="./icons/sprite.svg#icon-icon-email"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="site-contacts__item">
+              <a href="tel:+380961111111" class="site-contacts__link">
+                <svg class="site-contacts__icon tel" width="10" height="16">
+                  <use href="./icons/sprite.svg#icon-icon-tel"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -68,7 +71,7 @@
     </section>
 
     <section class="section information">
-      <div class="conteiner">
+      <div class="container">
         <ul class="about-work flexbox">
           <li class="about-work__list icon-antenna">
             <h3 class="about-work__title">Внимание к деталям</h3>
@@ -103,39 +106,66 @@
     </section>
 
     <section class="section examples">
-      <div class="conteiner products">
-        <h2 class="conteiner__title">Чем мы занимаемся</h2>
+      <div class="container products">
+        <h2 class="container__title">Чем мы занимаемся</h2>
         <ul class="list product flexbox">
           <li class="product__list">
             <div class="product__box">
-              <img
-                src="./images/img1.jpg"
-                alt="фото"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/desctop.jpg    1x,
+                    ./images/desktop/desctop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop/desctop.jpg"
+                  alt="фото"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="product__text">Десктопные приложения</p>
             </div>
           </li>
           <li class="product__list">
             <div class="product__box">
-              <img
-                src="./images/img2.jpg"
-                alt="фото"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/mobile.jpg    1x,
+                    ./images/desktop/mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop/mobile.jpg "
+                  alt="фото"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="product__text">Мобильные приложения</p>
             </div>
           </li>
           <li class="product__list">
             <div class="product__box">
-              <img
-                src="./images/img3.jpg"
-                alt="фото"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/design.jpg    1x,
+                    ./images/desktop/design@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/desktop/design.jpg "
+                  alt="фото"
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="product__text">Дизайнерские решения</p>
             </div>
           </li>
@@ -144,8 +174,8 @@
     </section>
 
     <section class="section team">
-      <div class="conteiner worker">
-        <h2 class="conteiner__title">Наша команда</h2>
+      <div class="container worker">
+        <h2 class="container__title">Наша команда</h2>
         <ul class="list staff">
           <li class="staff__list">
             <div class="staff__box">
@@ -493,8 +523,8 @@
     </section>
 
     <section class="section our-client">
-      <div class="conteiner">
-        <h2 class="conteiner__title">Постоянные клиенты</h2>
+      <div class="container">
+        <h2 class="container__title">Постоянные клиенты</h2>
         <ul class="clients">
           <li class="clients__item">
             <a
@@ -573,10 +603,10 @@
     </section>
 
     <footer class="footer">
-      <div class="conteiner footer-container">
+      <div class="container footer-container">
         <div class="footer-box box-adress">
-          <a href="" class="logotype logotype--footer"
-            >Web<span class="logotype__part">Studio</span>
+          <a href="" class="logo"
+            >Web<span class="logo-bottom">Studio</span>
           </a>
           <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
           <div class="footer-contacts">
