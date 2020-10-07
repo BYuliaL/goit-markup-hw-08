@@ -830,7 +830,7 @@ textarea {
   padding-bottom: 30px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .social-icons {
     justify-content: center;
   }
@@ -863,6 +863,16 @@ textarea {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-box .social-icons {
+    justify-content: right;
+  }
+}
+
+.staff__box .social-icons {
+  padding-bottom: 30px;
 }
 
 .section {
