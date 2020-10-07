@@ -10,6 +10,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
     <!--ГЛАВНОЕ МЕНЮ-->
     <header class="header">
@@ -17,7 +18,30 @@
         <a href="" class="logo logotype"
           >Web<span class="logo-top">Studio</span>
         </a>
-        <div class="main-container">
+
+        <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          aria-controls="main-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="icon-cross"
+              href="./icons/sprite.svg#icon-close_40px-1"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./icons/sprite.svg#icon-menu_40px-1"
+            ></use>
+          </svg>
+        </button>
+        <div class="main-container is-open" id="main-container" data-menu>
           <ul class="site-nav contacts">
             <li class="site-nav__item">
               <a href="./" class="site-nav__link site-nav__link--current"
@@ -786,5 +810,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

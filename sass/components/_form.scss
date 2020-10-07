@@ -1,19 +1,15 @@
-.modal-form {
-  padding: 40px;
+.modal-form__text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
 
-  .modal-form__text {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 13px;
 
-    margin-top: 0;
-    margin-bottom: 13px;
-
-    letter-spacing: 0.03em;
-    color: #212121;
-  }
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .form__field {
@@ -107,7 +103,8 @@
 }
 
 .modal-button {
-  margin-left: 125px;
+  display: block;
+  margin: 0 auto;
 }
 
 .checkbox:checked ~ span::before {
