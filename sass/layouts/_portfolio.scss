@@ -58,12 +58,14 @@
 }
 
 .gallery {
-  margin: -15px;
   padding-left: 0;
+  margin: 0;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+
+    margin: -15px;
   }
 }
 
